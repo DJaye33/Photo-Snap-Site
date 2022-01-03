@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* Globals */
+/* Base */
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+:root {
+  /* Main Accent */
+  --color-accent-gradient: #ffc593, rgb(255, 197, 147), 28°, 100%, 79%;
+  /* Primary Colors */
+  --color-pure-black: #000;
+  --color-light-grey: #ddd;
+  --color-pure-white: #fff; }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh; }
+
+/*# sourceMappingURL=app.css.map */
