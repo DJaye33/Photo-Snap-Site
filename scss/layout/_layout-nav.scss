@@ -1,3 +1,52 @@
-// .navbar {
+.navbar {
+  padding: 2.8rem 2.4rem;
+  border: 1px dotted gold;
+  position: relative;
 
-// }
+  .navbar__navigation {
+    border: 1px dotted purple;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    padding: 3.2rem;
+
+    .navbar__nav-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px dotted green;
+
+      .navbar__nav-link {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: var(--color-pure-black);
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: var(--color-light-grey);
+        }
+      }
+    }
+  }
+
+  .navbar__menu-btn {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--color-pure-white);
+
+    &--close {
+      display: none;
+    }
+  }
+}
