@@ -1,4 +1,7 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 2.8rem 2.4rem;
   border: 1px dotted gold;
   position: relative;
@@ -17,7 +20,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1px dotted green;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--color-light-grey);
 
       .navbar__nav-link {
         font-weight: bold;
@@ -33,6 +37,25 @@
         &:hover {
           color: var(--color-light-grey);
         }
+      }
+    }
+
+    .navbar__nav-btn {
+      display: block;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-align: center;
+      letter-spacing: 0.2rem;
+      color: var(--color-pure-white);
+      background-color: var(--color-pure-black);
+      width: 100%;
+      padding: 1.2rem 2.4rem;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--color-pure-black);
+        background-color: var(--color-light-grey);
       }
     }
   }
