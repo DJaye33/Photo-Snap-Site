@@ -3,17 +3,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 2.8rem 2.4rem;
-  border: 1px dotted gold;
   position: relative;
+  background-color: var(--color-pure-white);
 
   .navbar__navigation {
-    border: 1px dotted purple;
+    display: none;
     position: absolute;
     left: 0;
     right: 0;
     top: 100%;
     width: 100%;
     padding: 3.2rem;
+    background-color: var(--color-pure-white);
+
+    &--active {
+      display: block;
+    }
 
     .navbar__nav-links {
       display: flex;
