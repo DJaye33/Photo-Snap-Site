@@ -1,0 +1,15 @@
+.header {
+  &__create-graphic {
+    min-height: 29.4rem;
+    width: 100%;
+    background-image: url("../../assets/home/mobile/create-and-share.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__create-stories {
+      background-color: var(--color-pure-black);
+      padding: 7.2rem 3.3rem;
+  }
+}

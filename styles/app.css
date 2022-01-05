@@ -43,7 +43,15 @@ a {
   .overlay--active {
     display: block; }
 
+h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.33rem;
+  text-transform: uppercase;
+  color: var(--color-pure-white); }
+
 /* Layout */
+/* Nav */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -142,5 +150,17 @@ a {
         display: none !important; } }
     .navbar .navbar__menu-btn--close {
       display: none; }
+
+/* Main */
+.header__create-graphic {
+  min-height: 29.4rem;
+  width: 100%;
+  background-image: url("../../assets/home/mobile/create-and-share.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+.header__create-stories {
+  background-color: var(--color-pure-black);
+  padding: 7.2rem 3.3rem; }
 
 /*# sourceMappingURL=app.css.map */
