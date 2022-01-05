@@ -9,7 +9,22 @@
   }
 
   &__create-stories {
-      background-color: var(--color-pure-black);
-      padding: 7.2rem 3.3rem;
+    background-color: var(--color-pure-black);
+    padding: 7.2rem 3.3rem;
+  }
+
+  &__invite {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 2.3rem;
+    @include anchor-arrow;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    & svg {
+      margin-left: 1.8rem;
+    }
   }
 }

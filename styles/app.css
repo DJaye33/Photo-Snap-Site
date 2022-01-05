@@ -50,6 +50,13 @@ h1 {
   text-transform: uppercase;
   color: var(--color-pure-white); }
 
+.header p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--color-pure-white);
+  opacity: 0.6;
+  margin-top: 1.6rem; }
+
 /* Layout */
 /* Nav */
 .navbar {
@@ -162,5 +169,19 @@ h1 {
 .header__create-stories {
   background-color: var(--color-pure-black);
   padding: 7.2rem 3.3rem; }
+.header__invite {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2.3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--color-pure-white); }
+  .header__invite:hover {
+    text-decoration: underline; }
+  .header__invite svg {
+    margin-left: 1.8rem; }
 
 /*# sourceMappingURL=app.css.map */
