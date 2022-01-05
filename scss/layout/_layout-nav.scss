@@ -6,6 +6,14 @@
   position: relative;
   background-color: var(--color-pure-white);
 
+  @media screen and (min-width: 768px) {
+    padding: 2.8rem 4rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 2.8rem 16.5rem;
+  }
+
   .navbar__navigation {
     display: none;
     position: absolute;
@@ -16,8 +24,20 @@
     padding: 3.2rem;
     background-color: var(--color-pure-white);
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: initial;
+      padding: initial;
+    }
+
     &--active {
       display: block;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
     }
 
     .navbar__nav-links {
@@ -27,6 +47,14 @@
       align-items: center;
       margin-bottom: 2rem;
       border-bottom: 2px solid var(--color-light-grey);
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 26.9rem;
+        margin: 0 auto;
+        border-bottom: initial;
+      }
 
       .navbar__nav-link {
         font-weight: bold;
@@ -38,6 +66,12 @@
         margin-bottom: 2rem;
         color: var(--color-pure-black);
         transition: color 0.2s ease-in-out;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          margin-bottom: initial;
+        }
 
         &:hover {
           color: var(--color-light-grey);
@@ -58,6 +92,10 @@
       padding: 1.2rem 2.4rem;
       transition: 0.2s ease-in-out;
 
+      @media screen and (min-width: 768px) {
+        width: initial;
+      }
+
       &:hover {
         color: var(--color-pure-black);
         background-color: var(--color-light-grey);
@@ -72,6 +110,16 @@
     align-items: center;
     border: none;
     background-color: var(--color-pure-white);
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    &--open {
+      @media screen and (min-width: 768px) {
+        display: none !important;
+      }
+    }
 
     &--close {
       display: none;
