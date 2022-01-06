@@ -50,3 +50,8 @@ h1 {
   opacity: 0.6;
   margin-top: 1.6rem;
 }
+
+h2 {
+  @extend h1;
+  color: var(--color-pure-black);
+}
