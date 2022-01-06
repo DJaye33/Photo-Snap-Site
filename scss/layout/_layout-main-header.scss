@@ -9,6 +9,7 @@
     background-color: var(--color-pure-black);
     padding: 7.2rem 3.3rem;
     position: relative;
+    z-index: -1;
 
     &::before {
       content: "";
@@ -56,6 +57,30 @@
 
     & p {
       color: var(--color-pure-black);
+    }
+
+    & .header__invite {
+      @extend .header__invite;
+      color: var(--color-pure-black);
+      @include anchor-arrow(var(--color-pure-black));
+    }
+  }
+
+  &__designed {
+    @extend .header__create-stories;
+    background-color: var(--color-pure-white);
+    position: initial;
+
+    &::before {
+      content: none;
+    }
+
+    & p {
+      color: var(--color-pure-black);
+    }
+
+    &-graphic {
+      @extend .header__create-graphic;
     }
 
     & .header__invite {
