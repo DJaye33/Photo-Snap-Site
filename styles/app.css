@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Globals */
 /* Base */
 * {
@@ -16,7 +15,9 @@ html {
 
 :root {
   /* Main Accent */
-  --color-accent-gradient: #ffc593, rgb(255, 197, 147), 28°, 100%, 79%;
+  --color-accent-gradient-1: #ffc593;
+  --color-accent-gradient-2: #bc7198;
+  --color-accent-gradient-3: #5a77ff;
   /* Primary Colors */
   --color-pure-black: #000;
   --color-light-grey: #ddd;
@@ -160,15 +161,21 @@ h1 {
 
 /* Main */
 .header__create-graphic {
-  min-height: 29.4rem;
-  width: 100%;
-  background-image: url("../../assets/home/mobile/create-and-share.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+  display: block;
+  height: auto;
+  width: 100%; }
 .header__create-stories {
   background-color: var(--color-pure-black);
-  padding: 7.2rem 3.3rem; }
+  padding: 7.2rem 3.3rem;
+  position: relative; }
+  .header__create-stories::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3.3rem;
+    width: 12.8rem;
+    height: 0.6rem;
+    background: linear-gradient(26.57deg, var(--color-accent-gradient-1) 0%, var(--color-accent-gradient-2) 43.29%, var(--color-accent-gradient-3) 83.33%); }
 .header__invite {
   display: inline-flex;
   align-items: center;

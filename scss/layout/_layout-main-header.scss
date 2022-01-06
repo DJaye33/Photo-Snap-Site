@@ -1,16 +1,29 @@
 .header {
   &__create-graphic {
-    min-height: 29.4rem;
+    display: block;
+    height: auto;
     width: 100%;
-    background-image: url("../../assets/home/mobile/create-and-share.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
   }
 
   &__create-stories {
     background-color: var(--color-pure-black);
     padding: 7.2rem 3.3rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 3.3rem;
+      width: 12.8rem;
+      height: 0.6rem;
+      background: linear-gradient(
+        26.57deg,
+        var(--color-accent-gradient-1) 0%,
+        var(--color-accent-gradient-2) 43.29%,
+        var(--color-accent-gradient-3) 83.33%
+      );
+    }
   }
 
   &__invite {
