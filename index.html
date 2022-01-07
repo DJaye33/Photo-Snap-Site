@@ -61,11 +61,21 @@
     <main class="main">
       <header class="header">
         <!-- Start Create Graphics -->
-        <img
-          class="header__create-graphic"
-          src="./assets/home/mobile/create-and-share.jpg"
-          alt="man with camera in hand standing on peer looking at the water"
-        />
+        <picture class="header__create-graphic">
+          <source
+            media="(min-width:1440px)"
+            srcset="./assets/home/desktop/create-and-share.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./assets/home/tablet/create-and-share.jpg"
+          />
+          <img
+            src="./assets/home/mobile/create-and-share.jpg"
+            alt="Flowers"
+            style="width: 100%"
+          />
+        </picture>
         <section class="header__create-stories">
           <h1>Create and share your photo stories.</h1>
           <p>
@@ -83,11 +93,21 @@
           </a>
         </section>
         <!-- Start Beautiful Stories -->
-        <img
-          class="header__beautiful-stories-graphic"
-          src="./assets/home/mobile/beautiful-stories.jpg"
-          alt="laptop on wooded desk with photo of baby on screen open in an editor"
-        />
+        <picture class="header__create-graphic">
+          <source
+            media="(min-width:1440px)"
+            srcset="./assets/home/desktop/beautiful-stories.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./assets/home/tablet/beautiful-stories.jpg"
+          />
+          <img
+            src="./assets/home/mobile/beautiful-stories.jpg"
+            alt="Flowers"
+            style="width: 100%"
+          />
+        </picture>
         <section class="header__beautiful-stories">
           <h2>Beautiful stories every time</h2>
           <p>
@@ -104,12 +124,22 @@
             </svg>
           </a>
         </section>
-        <!-- Designed for Everyone -->
-        <img
-          class="header__designed-graphic"
-          src="./assets/home/mobile/designed-for-everyone.jpg"
-          alt="laptop on wooded desk with photo of baby on screen open in an editor"
-        />
+        <!-- Start Designed for Everyone -->
+        <picture class="header__create-graphic">
+          <source
+            media="(min-width:1440px)"
+            srcset="./assets/home/desktop/designed-for-everyone.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./assets/home/tablet/designed-for-everyone.jpg"
+          />
+          <img
+            src="./assets/home/mobile/designed-for-everyone.jpg"
+            alt="Flowers"
+            style="width: 100%"
+          />
+        </picture>
         <section class="header__designed">
           <h2>Designed for everyone</h2>
           <p>
