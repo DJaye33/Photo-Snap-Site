@@ -49,9 +49,19 @@ h1 {
   color: var(--color-pure-white);
   opacity: 0.6;
   margin-top: 1.6rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 2.1rem;
+  }
 }
 
 h2 {
   @extend h1;
   color: var(--color-pure-black);
+}
+
+picture img {
+  display: block;
+  height: auto;
+  width: 100%;
 }

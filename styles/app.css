@@ -57,9 +57,17 @@ h1, h2 {
   color: var(--color-pure-white);
   opacity: 0.6;
   margin-top: 1.6rem; }
+  @media screen and (min-width: 768px) {
+    .header p {
+      margin-top: 2.1rem; } }
 
 h2 {
   color: var(--color-pure-black); }
+
+picture img {
+  display: block;
+  height: auto;
+  width: 100%; }
 
 /* Layout */
 /* Nav */
@@ -165,56 +173,83 @@ h2 {
       display: none; }
 
 /* Main */
-.header {
-  /* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .header {
     display: grid;
-    grid-template-columns: 65% 35%;
-    grid-template-rows: 1fr 1fr 1fr;
-  } */ }
-  .header__create-graphic, .header__beautiful-stories-graphic, .header__designed-graphic {
-    display: block;
-    height: auto;
-    width: 100%; }
-  .header__create-stories, .header__beautiful-stories, .header__designed {
-    background-color: var(--color-pure-black);
-    padding: 7.2rem 3.3rem;
-    position: relative; }
-    .header__create-stories::before, .header__beautiful-stories::before, .header__designed::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 3.3rem;
-      width: 12.8rem;
-      height: 0.6rem;
-      background: linear-gradient(26.57deg, var(--color-accent-gradient-1) 0%, var(--color-accent-gradient-2) 43.29%, var(--color-accent-gradient-3) 83.33%); }
-  .header__invite, .header__beautiful-stories .header__invite, .header__designed .header__invite {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 2.3rem;
+    grid-template-columns: 35% 30% 1fr;
+    grid-template-rows: auto; } }
+.header__create-graphic, .header__beautiful-stories-graphic, .header__designed-graphic {
+  order: 2;
+  display: block;
+  height: auto;
+  width: 100%; }
+.header__create-stories, .header__beautiful-stories, .header__designed {
+  order: 1;
+  background-color: var(--color-pure-black);
+  padding: 7.2rem 3.3rem;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .header__create-stories, .header__beautiful-stories, .header__designed {
+      padding: 17.3rem 5.4rem;
+      grid-column: 1 / span 2; } }
+  .header__create-stories::before, .header__beautiful-stories::before, .header__designed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3.3rem;
+    width: 12.8rem;
+    height: 0.6rem;
+    background: linear-gradient(26.57deg, var(--color-accent-gradient-1) 0%, var(--color-accent-gradient-2) 43.29%, var(--color-accent-gradient-3) 83.33%); }
+    @media screen and (min-width: 768px) {
+      .header__create-stories::before, .header__beautiful-stories::before, .header__designed::before {
+        top: 16.8rem;
+        left: 0;
+        width: 0.6rem;
+        height: 30.04rem; } }
+.header__invite, .header__beautiful-stories .header__invite, .header__designed .header__invite {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2.3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--color-pure-white); }
+  @media screen and (min-width: 768px) {
+    .header__invite, .header__beautiful-stories .header__invite, .header__designed .header__invite {
+      margin-top: 4.8rem; } }
+  .header__invite:hover {
+    text-decoration: underline; }
+  .header__invite svg, .header__beautiful-stories .header__invite svg, .header__designed .header__invite svg {
+    margin-left: 1.8rem; }
+.header__beautiful-stories-graphic {
+  order: 3; }
+.header__beautiful-stories, .header__designed {
+  order: 4;
+  background-color: var(--color-pure-white);
+  position: initial; }
+  @media screen and (min-width: 768px) {
+    .header__beautiful-stories, .header__designed {
+      grid-column: 2 / -1; } }
+  .header__beautiful-stories::before, .header__designed::before {
+    content: none; }
+  .header__beautiful-stories p, .header__designed p {
+    color: var(--color-pure-black); }
+  .header__beautiful-stories .header__invite, .header__designed .header__invite {
+    color: var(--color-pure-black);
     font-weight: bold;
     font-size: 1.2rem;
     line-height: 1.6rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-    color: var(--color-pure-white); }
-    .header__invite:hover {
-      text-decoration: underline; }
-    .header__invite svg, .header__beautiful-stories .header__invite svg, .header__designed .header__invite svg {
-      margin-left: 1.8rem; }
-  .header__beautiful-stories, .header__designed {
-    background-color: var(--color-pure-white);
-    position: initial; }
-    .header__beautiful-stories::before, .header__designed::before {
-      content: none; }
-    .header__beautiful-stories p, .header__designed p {
-      color: var(--color-pure-black); }
-    .header__beautiful-stories .header__invite, .header__designed .header__invite {
-      color: var(--color-pure-black);
-      font-weight: bold;
-      font-size: 1.2rem;
-      line-height: 1.6rem;
-      letter-spacing: 0.2rem;
-      text-transform: uppercase;
-      color: var(--color-pure-black); }
+    color: var(--color-pure-black); }
+.header__designed {
+  order: 5; }
+  @media screen and (min-width: 768px) {
+    .header__designed {
+      grid-column: 1 / span 2; } }
+  .header__designed-graphic {
+    order: 6; }
 
 /*# sourceMappingURL=app.css.map */
