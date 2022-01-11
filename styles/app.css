@@ -25,7 +25,8 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #0c0b0b; }
 
 a {
   text-decoration: none; }
@@ -180,7 +181,9 @@ picture img {
     grid-template-rows: auto; } }
 @media screen and (min-width: 1440px) {
   .header {
-    grid-template-columns: 42% 15% 1fr; } }
+    grid-template-columns: 42% 15% 1fr;
+    margin: 0 auto;
+    max-width: 1440px; } }
 .header__create-graphic, .header__beautiful-stories-graphic, .header__designed-graphic {
   order: 2;
   display: block;
@@ -274,5 +277,64 @@ picture img {
     @media screen and (min-width: 1440px) {
       .header__designed-graphic {
         grid-column: 2 / -1; } }
+
+.grid__item-link {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 23.6rem 3.3rem 4rem;
+  width: 100%;
+  height: 37.5rem;
+  position: relative;
+  transition: transform 0.2s ease-in-out; }
+  .grid__item-link:hover {
+    transform: translateY(-2rem); }
+  .grid__item-link:hover::after {
+    width: 100%; }
+  .grid__item-link::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 0.6rem;
+    background: linear-gradient(26.57deg, var(--color-accent-gradient-1) 0%, var(--color-accent-gradient-2) 43.29%, var(--color-accent-gradient-3) 83.33%);
+    transition: width 0.3s ease-in; }
+  .grid__item-link--mountains {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .grid__item-link--sunset {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/cityscapes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .grid__item-link--voyage {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/18-days-voyage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .grid__item-link--architectural {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/architecturals.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+.grid__item-title {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--color-pure-white); }
+.grid__item-author {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: var(--color-pure-white);
+  margin-top: 0.4rem; }
+.grid__item-rule {
+  margin: 2rem 0; }
+.grid__item-story {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--color-pure-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=app.css.map */

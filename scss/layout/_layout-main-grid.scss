@@ -1,0 +1,102 @@
+.grid {
+  &__item-link {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 23.6rem 3.3rem 4rem;
+    width: 100%;
+    height: 37.5rem;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-2rem);
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0%;
+      height: 0.6rem;
+      background: linear-gradient(
+        26.57deg,
+        var(--color-accent-gradient-1) 0%,
+        var(--color-accent-gradient-2) 43.29%,
+        var(--color-accent-gradient-3) 83.33%
+      );
+      transition: width 0.3s ease-in;
+    }
+
+    &--mountains {
+      @include grid-itemsBg(
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        "../../assets/stories/mobile/mountains.jpg"
+      );
+    }
+
+    &--sunset {
+      @include grid-itemsBg(
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        "../../assets/stories/mobile/cityscapes.jpg"
+      );
+    }
+
+    &--voyage {
+      @include grid-itemsBg(
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        "../../assets/stories/mobile/18-days-voyage.jpg"
+      );
+    }
+
+    &--architectural {
+      @include grid-itemsBg(
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        "../../assets/stories/mobile/architecturals.jpg"
+      );
+    }
+  }
+
+  &__item-title {
+    @include grid-item-text(1.8rem, 2.5rem, var(--color-pure-white));
+  }
+
+  &__item-author {
+    @include grid-item-text(1.3rem, 1.7rem, var(--color-pure-white));
+    margin-top: 0.4rem;
+  }
+
+  &__item-rule {
+    margin: 2rem 0;
+  }
+
+  &__item-story {
+    @include grid-item-text(1.2rem, 1.6rem, var(--color-pure-white));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+}

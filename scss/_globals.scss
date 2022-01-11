@@ -6,3 +6,20 @@
   text-transform: uppercase;
   color: $color;
 }
+
+@mixin grid-item-text(
+  $fontSize,
+  $lineHeight,
+  $color,
+  $letter-spacing: initial
+) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin grid-itemsBg($bgGradeint, $bgUrl, $bgRepeat: no-repeat, $bgSize: cover) {
+  background: $bgGradeint, url($bgUrl);
+  background-repeat: $bgRepeat;
+  background-size: $bgSize;
+}
