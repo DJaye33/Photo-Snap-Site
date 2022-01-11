@@ -178,11 +178,17 @@ picture img {
     display: grid;
     grid-template-columns: 35% 30% 1fr;
     grid-template-rows: auto; } }
+@media screen and (min-width: 1440px) {
+  .header {
+    grid-template-columns: 42% 15% 1fr; } }
 .header__create-graphic, .header__beautiful-stories-graphic, .header__designed-graphic {
   order: 2;
   display: block;
   height: auto;
   width: 100%; }
+  @media screen and (min-width: 1440px) {
+    .header__create-graphic, .header__beautiful-stories-graphic, .header__designed-graphic {
+      grid-column: 2 / -1; } }
 .header__create-stories, .header__beautiful-stories, .header__designed {
   order: 1;
   background-color: var(--color-pure-black);
@@ -192,6 +198,10 @@ picture img {
     .header__create-stories, .header__beautiful-stories, .header__designed {
       padding: 17.3rem 5.4rem;
       grid-column: 1 / span 2; } }
+  @media screen and (min-width: 1440px) {
+    .header__create-stories, .header__beautiful-stories, .header__designed {
+      padding: 17.3rem 11.2rem;
+      grid-column: 1 / 2; } }
   .header__create-stories::before, .header__beautiful-stories::before, .header__designed::before {
     content: "";
     position: absolute;
@@ -225,13 +235,20 @@ picture img {
     margin-left: 1.8rem; }
 .header__beautiful-stories-graphic {
   order: 3; }
+  @media screen and (min-width: 1440px) {
+    .header__beautiful-stories-graphic {
+      grid-column: 1 / span 2; } }
 .header__beautiful-stories, .header__designed {
   order: 4;
   background-color: var(--color-pure-white);
   position: initial; }
   @media screen and (min-width: 768px) {
     .header__beautiful-stories, .header__designed {
+      padding: 13.6rem 11.2rem;
       grid-column: 2 / -1; } }
+  @media screen and (min-width: 1440px) {
+    .header__beautiful-stories, .header__designed {
+      grid-column: 3 / -1; } }
   .header__beautiful-stories::before, .header__designed::before {
     content: none; }
   .header__beautiful-stories p, .header__designed p {
@@ -249,7 +266,13 @@ picture img {
   @media screen and (min-width: 768px) {
     .header__designed {
       grid-column: 1 / span 2; } }
+  @media screen and (min-width: 1440px) {
+    .header__designed {
+      grid-column: 1 / 2; } }
   .header__designed-graphic {
     order: 6; }
+    @media screen and (min-width: 1440px) {
+      .header__designed-graphic {
+        grid-column: 2 / -1; } }
 
 /*# sourceMappingURL=app.css.map */
