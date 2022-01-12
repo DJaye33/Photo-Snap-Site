@@ -23,3 +23,17 @@
   background-repeat: $bgRepeat;
   background-size: $bgSize;
 }
+
+@mixin fontsanstitles(
+  $fontSize,
+  $lineHeight,
+  $color,
+  $fontWeight: normal,
+  $textAlign: center
+) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
