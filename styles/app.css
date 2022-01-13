@@ -607,6 +607,13 @@ picture img {
   .stories-grid {
     margin: 0 auto;
     max-width: 1440px; } }
+.stories-grid__item-date {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: var(--color-pure-white);
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 0.4rem; }
 .stories-grid__item-link {
   display: inline-flex;
   flex-direction: column;
@@ -616,6 +623,9 @@ picture img {
   min-height: 37.5rem;
   position: relative;
   transition: transform 0.2s ease-in-out; }
+  @media (min-width: 768px) {
+    .stories-grid__item-link {
+      min-height: 50rem; } }
   .stories-grid__item-link:hover {
     transform: translateY(-2rem); }
   .stories-grid__item-link:hover::after {
@@ -633,18 +643,146 @@ picture img {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/mountains.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--mountains {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/mountains.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
   .stories-grid__item-link--sunset {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/cityscapes.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--sunset {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/cityscapes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
   .stories-grid__item-link--voyage {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/18-days-voyage.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--voyage {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/18-days-voyage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
   .stories-grid__item-link--architectural {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/architecturals.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--architectural {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/architectural.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--tour {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/world-tour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--tour {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/world-tour.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--corners {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/unforeseen-corners.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--corners {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/unforeseen-corners.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--king {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/king-on-africa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--king {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/king-on-africa.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--nowhere {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/trip-to-nowhere.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--nowhere {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/trip-to-nowhere.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--sea {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/rage-of-the-sea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--sea {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/rage-of-the-sea.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--free {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/running-free.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--free {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/running-free.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--waves {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/behind-the-waves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--waves {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/behind-the-waves.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--calm {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/calm-waters.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--calm {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/calm-waters.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--milky {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/milky-way.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--milky {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/milky-way.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--forest {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/dark-forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--forest {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/dark-forest.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--beauty {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/somwarpet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--beauty {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/somwarpet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .stories-grid__item-link--dreams {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/mobile/land-of-dreams.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .stories-grid__item-link--dreams {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../../assets/stories/desktop/land-of-dreams.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
 .stories-grid__item-title {
   font-size: 1.8rem;
   line-height: 2.5rem;
