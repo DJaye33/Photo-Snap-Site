@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <title>Frontend Mentor | Photosnap Website Challenge</title>
+  </head>
+  <body>
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <!-- Start Navbar -->
+    <nav class="navbar">
+      <a href="/" class="navbar__home">
+        <img
+          src="./assets/shared/desktop/logo.svg"
+          alt=""
+          class="navbar__logo"
+        />
+      </a>
+      <!-- NavLinks -->
+      <aside class="navbar__navigation">
+        <section class="navbar__nav-links">
+          <a href="/pages/stories.html" class="navbar__nav-link">Stories</a>
+          <a href="/pages/features.html" class="navbar__nav-link">features</a>
+          <a href="/pages/pricing.html" class="navbar__nav-link">Pricing</a>
+        </section>
+        <a href="" class="navbar__nav-btn">Get an invite</a>
+      </aside>
+      <!-- Menu buttons -->
+      <button class="navbar__menu-btn navbar__menu-btn--close">
+        <img
+          src="./assets/shared/mobile/close.svg"
+          alt="close menu"
+          class="navbar__close"
+        />
+      </button>
+      <button class="navbar__menu-btn navbar__menu-btn--open">
+        <img
+          src="./assets/shared/mobile/menu.svg"
+          alt="menu"
+          class="navbar__menu"
+        />
+      </button>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Main -->
+    <main class="main">
+      <header class="header">
+        <!-- Start Create Graphics -->
+        <picture class="header__create-graphic">
+          <source
+            media="(min-width:1440px)"
+            srcset="./assets/hstories/desktop/moon-of-appalacia.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./assets/stories/tablet/moon-of-appalacia.jpg"
+          />
+          <img
+            src="./assets/stories/mobile/moon-of-appalacia.jpg"
+            alt="Flowers"
+            style="width: 100%"
+          />
+        </picture>
+        <section class="header__full-moon">
+          <p class="header__featured">Last months featured story</p>
+          <h1>Hazy FUll Moon oif Appalachia</h1>
+          <p>
+            The dissected plateau area, while not actually made up of geological
+            mountains, is popularly called "mountains," especially in eastern
+            Kentucky and West Virginia, and while the ridges are not high, the
+            terrain is extremely rugged.
+          </p>
+          <p class="header__author">March 2nd 2020 by John Appleseed</p>
+          <a href="#" class="header__invite"
+            >Get an invite
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#fff">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </section>
+      </header>
+    </main>
+    <!-- End Main -->
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
