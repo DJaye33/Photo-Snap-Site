@@ -52,14 +52,16 @@ h1, h2 {
   text-transform: uppercase;
   color: var(--color-pure-white); }
 
-.header p {
+.header p,
+.stories-header p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--color-pure-white);
   opacity: 0.6;
   margin-top: 1.6rem; }
   @media screen and (min-width: 768px) {
-    .header p {
+    .header p,
+    .stories-header p {
       margin-top: 2.1rem; } }
 
 h2 {
@@ -524,6 +526,44 @@ picture img {
         .footer__copy .footer__copyright {
           width: 25.5rem; } }
 
-/* New Pages */
+/* Pages */
+@media (min-width: 768px) {
+  .stories-header {
+    position: relative; } }
+.stories-header__create-graphic {
+  display: block;
+  height: auto;
+  width: 100%; }
+.stories-header__create-stories {
+  background-color: var(--color-pure-black);
+  padding: 4.8rem 2.8rem;
+  position: relative; }
+  @media (min-width: 768px) {
+    .stories-header__create-stories {
+      position: absolute;
+      top: 12.2rem;
+      left: 3.9rem;
+      padding: 0 0;
+      width: 38.7rem;
+      background-color: transparent; } }
+  .stories-header__create-stories .stories-header__featured {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--color-pure-white);
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    opacity: initial;
+    margin-bottom: 1.6rem; }
+  .stories-header__create-stories .stories-header__author {
+    display: inline-block;
+    margin-right: 0.9rem; }
+  .stories-header__create-stories .stories-header__appleseed {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    color: var(--color-pure-white);
+    font-weight: left;
+    text-align: center; }
 
 /*# sourceMappingURL=app.css.map */
