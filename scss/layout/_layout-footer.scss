@@ -3,12 +3,16 @@
   background-color: var(--color-pure-black);
 
   &__branding {
+    display: block;
     margin: 0 auto;
-    text-align: center;
-    border: 1px dotted gold;
   }
 
   &__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 15.4rem;
+    margin: 3.2rem auto 0;
+
     .footer__facebook,
     .footer__youtube,
     .footer__twitter,
@@ -44,6 +48,55 @@
       & path:hover {
         fill: url("#instagram");
       }
+    }
+  }
+
+  &__navigation {
+    @include fontsanstitles(1.2rem, 1.6rem, var(--color-pure-white), bold);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.9rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    & a {
+      color: var(--color-pure-white);
+
+      &:hover {
+        opacity: 0.3;
+      }
+
+      &:not(&:first-child) {
+        margin-top: 1.9rem;
+      }
+    }
+  }
+
+  &__copy {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    row-gap: 3.4rem;
+    width: 25.5rem;
+    margin: 11.9rem auto 0;
+
+    .footer__invite {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include anchor-arrow;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      & svg {
+        margin-left: 2.2rem;
+      }
+    }
+
+    .footer__copyright {
+      @include fontsanstitles(1.5rem, 2rem, var(--color-light-grey));
+      opacity: 0.5;
     }
   }
 }
