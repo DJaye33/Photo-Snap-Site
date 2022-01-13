@@ -1,11 +1,11 @@
-.grid {
+.stories-grid {
   @media (min-width: 768px) {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: repeat(8, 1fr) / 1fr 1fr;
   }
 
   @media (min-width: 1024px) {
-    grid-template: 1fr / repeat(4, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
   }
 
   @media (min-width: 1440px) {
@@ -22,10 +22,6 @@
     min-height: 37.5rem;
     position: relative;
     transition: transform 0.2s ease-in-out;
-
-    @media (min-width: 768px) {
-      min-height: 50rem;
-    }
 
     &:hover {
       transform: translateY(-2rem);
@@ -60,17 +56,6 @@
         ),
         "../../assets/stories/mobile/mountains.jpg"
       );
-
-      @media (min-width: 768px) {
-        @include grid-itemsBg(
-          linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.0001) 0.27%,
-            rgba(0, 0, 0, 0.661222) 100%
-          ),
-          "../../assets/stories/desktop/mountains.jpg"
-        );
-      }
     }
 
     &--sunset {
@@ -82,17 +67,6 @@
         ),
         "../../assets/stories/mobile/cityscapes.jpg"
       );
-
-      @media (min-width: 768px) {
-        @include grid-itemsBg(
-          linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.0001) 0.27%,
-            rgba(0, 0, 0, 0.661222) 100%
-          ),
-          "../../assets/stories/desktop/cityscapes.jpg"
-        );
-      }
     }
 
     &--voyage {
@@ -104,17 +78,6 @@
         ),
         "../../assets/stories/mobile/18-days-voyage.jpg"
       );
-
-      @media (min-width: 768px) {
-        @include grid-itemsBg(
-          linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.0001) 0.27%,
-            rgba(0, 0, 0, 0.661222) 100%
-          ),
-          "../../assets/stories/desktop/18-days-voyage.jpg"
-        );
-      }
     }
 
     &--architectural {
@@ -126,17 +89,6 @@
         ),
         "../../assets/stories/mobile/architecturals.jpg"
       );
-
-      @media (min-width: 768px) {
-        @include grid-itemsBg(
-          linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.0001) 0.27%,
-            rgba(0, 0, 0, 0.661222) 100%
-          ),
-          "../../assets/stories/desktop/architecturals.jpg"
-        );
-      }
     }
   }
 

@@ -3,6 +3,11 @@
     position: relative;
   }
 
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
   &__create-graphic {
     display: block;
     height: auto;
