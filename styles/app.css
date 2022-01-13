@@ -395,7 +395,18 @@ picture img {
 .footer {
   padding: 5.6rem 3.2rem;
   background-color: var(--color-pure-black); }
-  .footer__branding {
+  @media (min-width: 768px) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 6.4rem 3.9rem;
+      position: relative; } }
+  @media (min-width: 768px) {
+    .footer__brands {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr;
+      row-gap: 12rem; } }
+  .footer__brands .footer__branding {
     display: block;
     margin: 0 auto; }
   .footer__socials {
@@ -431,18 +442,36 @@ picture img {
     margin-top: 4.9rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .footer__navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 31.5rem;
+        margin-top: initial;
+        position: absolute;
+        top: 11.5rem;
+        height: fit-content; } }
     .footer__navigation a {
       color: var(--color-pure-white); }
       .footer__navigation a:hover {
         opacity: 0.3; }
       .footer__navigation a:not(.footer__navigation a:first-child) {
         margin-top: 1.9rem; }
+        @media (min-width: 768px) {
+          .footer__navigation a:not(.footer__navigation a:first-child) {
+            margin-top: initial; } }
   .footer__copy {
     display: grid;
     grid-template: 1fr 1fr / 1fr;
     row-gap: 3.4rem;
     width: 25.5rem;
     margin: 11.9rem auto 0; }
+    @media (min-width: 768px) {
+      .footer__copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: initial; } }
     .footer__copy .footer__invite {
       display: flex;
       justify-content: center;
@@ -453,6 +482,10 @@ picture img {
       letter-spacing: 0.2rem;
       text-transform: uppercase;
       color: var(--color-pure-white); }
+      @media (min-width: 768px) {
+        .footer__copy .footer__invite {
+          justify-content: flex-end;
+          align-items: initial; } }
       .footer__copy .footer__invite:hover {
         text-decoration: underline; }
       .footer__copy .footer__invite svg {
@@ -464,5 +497,8 @@ picture img {
       font-weight: normal;
       text-align: center;
       opacity: 0.5; }
+      @media (min-width: 768px) {
+        .footer__copy .footer__copyright {
+          width: 25.5rem; } }
 
 /*# sourceMappingURL=app.css.map */

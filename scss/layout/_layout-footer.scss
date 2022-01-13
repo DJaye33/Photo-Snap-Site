@@ -2,9 +2,24 @@
   padding: 5.6rem 3.2rem;
   background-color: var(--color-pure-black);
 
-  &__branding {
-    display: block;
-    margin: 0 auto;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 6.4rem 3.9rem;
+    position: relative;
+  }
+
+  &__brands {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr;
+      row-gap: 12rem;
+    }
+
+    .footer__branding {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__socials {
@@ -59,6 +74,16 @@
     letter-spacing: 0.2rem;
     text-transform: uppercase;
 
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 31.5rem;
+      margin-top: initial;
+      position: absolute;
+      top: 11.5rem;
+      height: fit-content;
+    }
+
     & a {
       color: var(--color-pure-white);
 
@@ -68,6 +93,10 @@
 
       &:not(&:first-child) {
         margin-top: 1.9rem;
+
+        @media (min-width: 768px) {
+          margin-top: initial;
+        }
       }
     }
   }
@@ -79,11 +108,23 @@
     width: 25.5rem;
     margin: 11.9rem auto 0;
 
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: initial;
+    }
+
     .footer__invite {
       display: flex;
       justify-content: center;
       align-items: center;
       @include anchor-arrow;
+
+      @media (min-width: 768px) {
+        justify-content: flex-end;
+        align-items: initial;
+      }
 
       &:hover {
         text-decoration: underline;
@@ -97,6 +138,10 @@
     .footer__copyright {
       @include fontsanstitles(1.5rem, 2rem, var(--color-light-grey));
       opacity: 0.5;
+
+      @media (min-width: 768px) {
+        width: 25.5rem;
+      }
     }
   }
 }
