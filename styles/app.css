@@ -401,11 +401,21 @@ picture img {
       justify-content: space-between;
       padding: 6.4rem 3.9rem;
       position: relative; } }
+  @media (min-width: 1024px) {
+    .footer {
+      padding: 6.4rem 17rem; } }
+  @media (min-width: 1440px) {
+    .footer {
+      margin: 0 auto;
+      max-width: 1440px; } }
   @media (min-width: 768px) {
     .footer__brands {
       display: grid;
       grid-template: 1fr 1fr / 1fr;
       row-gap: 12rem; } }
+  @media (min-width: 1024px) {
+    .footer__brands {
+      row-gap: 1.5rem; } }
   .footer__brands .footer__branding {
     display: block;
     margin: 0 auto; }
@@ -451,6 +461,16 @@ picture img {
         position: absolute;
         top: 11.5rem;
         height: fit-content; } }
+    @media (min-width: 1024px) {
+      .footer__navigation {
+        flex-direction: column;
+        justify-content: initial;
+        width: initial;
+        position: absolute;
+        top: 6.4rem;
+        left: 44.7rem;
+        height: initial;
+        text-align: left; } }
     .footer__navigation a {
       color: var(--color-pure-white); }
       .footer__navigation a:hover {
@@ -460,6 +480,9 @@ picture img {
         @media (min-width: 768px) {
           .footer__navigation a:not(.footer__navigation a:first-child) {
             margin-top: initial; } }
+        @media (min-width: 1024px) {
+          .footer__navigation a:not(.footer__navigation a:first-child) {
+            margin-top: 1.9rem; } }
   .footer__copy {
     display: grid;
     grid-template: 1fr 1fr / 1fr;
