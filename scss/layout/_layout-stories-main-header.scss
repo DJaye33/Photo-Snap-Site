@@ -16,11 +16,15 @@
 
     @media (min-width: 768px) {
       position: absolute;
-      top: 12.2rem;
+      top: 11.5rem;
       left: 3.9rem;
       padding: 0 0;
       width: 38.7rem;
       background-color: transparent;
+    }
+
+    @media (min-width: 768px) {
+      left: 11.2rem;
     }
 
     .stories-header__featured {

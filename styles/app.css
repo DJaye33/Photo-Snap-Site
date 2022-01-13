@@ -541,11 +541,14 @@ picture img {
   @media (min-width: 768px) {
     .stories-header__create-stories {
       position: absolute;
-      top: 12.2rem;
+      top: 11.5rem;
       left: 3.9rem;
       padding: 0 0;
       width: 38.7rem;
       background-color: transparent; } }
+  @media (min-width: 768px) {
+    .stories-header__create-stories {
+      left: 11.2rem; } }
   .stories-header__create-stories .stories-header__featured {
     font-size: 1.2rem;
     line-height: 1.6rem;
