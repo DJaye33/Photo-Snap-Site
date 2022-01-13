@@ -284,7 +284,7 @@ picture img {
     grid-template: 1fr 1fr / 1fr 1fr; } }
 @media (min-width: 1024px) {
   .grid {
-    grid-template: 0 0/repeat(4, 1fr); } }
+    grid-template: 1fr/repeat(4, 1fr); } }
 @media (min-width: 1440px) {
   .grid {
     margin: 0 auto;
@@ -351,13 +351,30 @@ picture img {
 .features {
   background-color: var(--color-pure-white);
   padding: 8rem 3.2rem; }
+  @media (min-width: 768px) {
+    .features {
+      padding: 12rem 15.6rem; } }
+  @media (min-width: 1024px) {
+    .features {
+      display: grid;
+      grid-template: 1fr/repeat(3, 1fr);
+      align-items: baseline;
+      column-gap: 3rem;
+      row-gap: 3rem; } }
+  @media (min-width: 1440px) {
+    .features {
+      margin: 0 auto;
+      max-width: 1440px; } }
   .features__feature {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; }
     .features__feature:not(.features__feature:first-child) {
       margin-top: 5.6rem; }
+      @media (min-width: 1024px) {
+        .features__feature:not(.features__feature:first-child) {
+          margin-top: initial; } }
   .features__title {
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -373,5 +390,31 @@ picture img {
     text-align: center;
     margin-top: 1.6rem;
     opacity: 0.6; }
+
+/* Footer */
+.footer {
+  padding: 5.6rem 3.2rem;
+  background-color: var(--color-pure-black); }
+  .footer__branding {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px dotted gold; }
+  .footer__socials .footer__facebook path,
+  .footer__socials .footer__youtube path,
+  .footer__socials .footer__twitter path,
+  .footer__socials .footer__pinterest path,
+  .footer__socials .footer__instagram path {
+    cursor: pointer;
+    fill: var(--color-pure-white); }
+  .footer__socials .footer__facebook path:hover {
+    fill: url("#facebook"); }
+  .footer__socials .footer__youtube path:hover {
+    fill: url("#youtube"); }
+  .footer__socials .footer__twitter path:hover {
+    fill: url("#twitter"); }
+  .footer__socials .footer__pinterest path:hover {
+    fill: url("#pinterest"); }
+  .footer__socials .footer__instagram path:hover {
+    fill: url("#instagram"); }
 
 /*# sourceMappingURL=app.css.map */

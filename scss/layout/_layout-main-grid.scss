@@ -5,7 +5,7 @@
   }
 
   @media (min-width: 1024px) {
-    grid-template: 0 0 / repeat(4, 1fr);
+    grid-template: 1fr / repeat(4, 1fr);
   }
 
   @media (min-width: 1440px) {

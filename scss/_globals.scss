@@ -37,3 +37,9 @@
   font-weight: $fontWeight;
   text-align: $textAlign;
 }
+
+@mixin displaySocials($fill, $onHover, $cursor: pointer) {
+  fill: $fill;
+  onhover: $onHover;
+  cursor: $cursor;
+}

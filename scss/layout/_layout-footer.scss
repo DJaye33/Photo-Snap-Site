@@ -1,0 +1,49 @@
+.footer {
+  padding: 5.6rem 3.2rem;
+  background-color: var(--color-pure-black);
+
+  &__branding {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px dotted gold;
+  }
+
+  &__socials {
+    .footer__facebook,
+    .footer__youtube,
+    .footer__twitter,
+    .footer__pinterest,
+    .footer__instagram {
+      & path {
+        cursor: pointer;
+        fill: var(--color-pure-white);
+      }
+    }
+
+    .footer__facebook {
+      & path:hover {
+        fill: url("#facebook");
+      }
+    }
+    .footer__youtube {
+      & path:hover {
+        fill: url("#youtube");
+      }
+    }
+    .footer__twitter {
+      & path:hover {
+        fill: url("#twitter");
+      }
+    }
+    .footer__pinterest {
+      & path:hover {
+        fill: url("#pinterest");
+      }
+    }
+    .footer__instagram {
+      & path:hover {
+        fill: url("#instagram");
+      }
+    }
+  }
+}
