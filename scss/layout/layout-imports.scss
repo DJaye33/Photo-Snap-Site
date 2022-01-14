@@ -11,8 +11,13 @@
 @import "layout-footer";
 
 /* Pages */
+
+/* Stories */
 @import "layout-stories-main-header";
 @import "layout-stories-main-grid";
+/* Features */
 @import "layout-features-main-header";
 @import "layout-features-main-featured";
 @import "layout-features-main-invite";
+/* Pricing */
+@import "layout-pricing-header";

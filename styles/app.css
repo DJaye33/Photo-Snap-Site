@@ -560,6 +560,7 @@ picture img {
           width: 25.5rem; } }
 
 /* Pages */
+/* Stories */
 @media (min-width: 768px) {
   .stories-header {
     position: relative; } }
@@ -814,6 +815,7 @@ picture img {
   letter-spacing: 0.2rem;
   text-transform: uppercase; }
 
+/* Features */
 @media screen and (min-width: 768px) {
   .features-header {
     display: grid;
@@ -948,5 +950,7 @@ picture img {
   @media (min-width: 768px) {
     .invite .header__invite {
       margin-top: initial; } }
+
+/* Pricing */
 
 /*# sourceMappingURL=app.css.map */
