@@ -1,16 +1,22 @@
-.features {
+.featured {
   background-color: var(--color-pure-white);
   padding: 8rem 3.2rem;
 
   @media (min-width: 768px) {
-    padding: 12rem 15.6rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    column-gap: 1.1rem;
+    row-gap: 7.2rem;
+    align-items: baseline;
+    padding: 11.2rem 3.8rem;
   }
-  
+
   @media (min-width: 1024px) {
     display: grid;
-    grid-template: 1fr / repeat(3, 1fr);
-    align-items: baseline;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     column-gap: 3rem;
+    row-gap: 10.4rem;
+    padding: 16rem 16.5rem;
   }
 
   @media (min-width: 1440px) {
@@ -27,7 +33,7 @@
     &:not(&:first-child) {
       margin-top: 5.6rem;
 
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         margin-top: initial;
       }
     }
