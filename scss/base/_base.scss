@@ -64,6 +64,18 @@ h2 {
   color: var(--color-pure-black);
 }
 
+h3 {
+  @extend h1;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.4rem;
+    width: 40rem;
+  }
+}
+
 picture img {
   display: block;
   height: auto;
