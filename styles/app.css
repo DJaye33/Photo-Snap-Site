@@ -1019,6 +1019,9 @@ picture img {
   align-items: center;
   width: 25.5rem;
   margin: 0 auto 1.6rem; }
+  @media (min-width: 1440px) {
+    .pricing-main__prices .pricing-main__toggle {
+      margin-bottom: 4.8rem; } }
   .pricing-main__prices .pricing-main__toggle .pricing-main__monthly {
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -1072,7 +1075,10 @@ picture img {
 @media (min-width: 1024px) {
   .pricing-main__prices .pricing-main__cards {
     display: grid;
-    grid-template: 1fr/repeat(3, 1fr);
+    grid-template: 1fr/repeat(3, 1fr); } }
+@media (min-width: 1440px) {
+  .pricing-main__prices .pricing-main__cards {
+    grid-template: 4rem 1fr 4rem/repeat(3, 1fr);
     column-gap: 3rem; } }
 .pricing-main__prices .pricing-main__cards .pricing-main__card {
   padding: 5.6rem 2.2rem;
@@ -1088,9 +1094,9 @@ picture img {
       align-items: center; } }
   @media (min-width: 1024px) {
     .pricing-main__prices .pricing-main__cards .pricing-main__card {
-      display: block;
-      text-align: center;
-      padding: 8.8rem 4rem; } }
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
   .pricing-main__prices .pricing-main__cards .pricing-main__card .pricing-main__title {
     font-size: 2.4rem;
     line-height: 2.5rem;
@@ -1114,6 +1120,9 @@ picture img {
         text-align: inherit;
         align-self: initial;
         margin-top: inherit; } }
+    @media (min-width: 1440px) {
+      .pricing-main__prices .pricing-main__cards .pricing-main__card .pricing-main__price {
+        margin-top: 4rem; } }
     .pricing-main__prices .pricing-main__cards .pricing-main__card .pricing-main__price span {
       font-size: 1.5rem;
       line-height: 2.5rem;
@@ -1127,12 +1136,21 @@ picture img {
   .pricing-main__prices .pricing-main__cards .pricing-main__card--basic, .pricing-main__prices .pricing-main__cards .pricing-main__card--business {
     color: var(--color-pure-black);
     background-color: var(--color-lighter-grey); }
+  @media (min-width: 1440px) {
+    .pricing-main__prices .pricing-main__cards .pricing-main__card--basic {
+      margin-top: 0;
+      grid-area: 2 / 1 / 3 / 2; } }
+  @media (min-width: 1440px) {
+    .pricing-main__prices .pricing-main__cards .pricing-main__card--business {
+      margin-top: 0;
+      grid-area: 2 / 3 / 3 / 4; } }
   .pricing-main__prices .pricing-main__cards .pricing-main__card--pro {
     color: var(--color-pure-white);
     background-color: var(--color-pure-black); }
-    @media (min-width: 1024px) {
+    @media (min-width: 1440px) {
       .pricing-main__prices .pricing-main__cards .pricing-main__card--pro {
-        height: 47rem; } }
+        margin-top: 0;
+        grid-area: 1 / 2 / 4 / 3; } }
     .pricing-main__prices .pricing-main__cards .pricing-main__card--pro::before {
       content: "";
       position: absolute;

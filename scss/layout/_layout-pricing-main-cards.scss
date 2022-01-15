@@ -6,6 +6,10 @@
     width: 25.5rem;
     margin: 0 auto 1.6rem;
 
+    @media (min-width: 1440px) {
+      margin-bottom: 4.8rem;
+    }
+
     .pricing-main__monthly {
       @include fontsanstitles(1.8rem, 2.5rem, var(--color-pure-black), bold);
       opacity: 0.5;
@@ -71,6 +75,10 @@
     @media (min-width: 1024px) {
       display: grid;
       grid-template: 1fr / repeat(3, 1fr);
+    }
+
+    @media (min-width: 1440px) {
+      grid-template: 4rem 1fr 4rem / repeat(3, 1fr);
       column-gap: 3rem;
     }
 
@@ -89,9 +97,9 @@
       }
 
       @media (min-width: 1024px) {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        padding: 8.8rem 4rem;
       }
 
       .pricing-main__title {
@@ -122,6 +130,10 @@
           margin-top: inherit;
         }
 
+        @media (min-width: 1440px) {
+          margin-top: 4rem;
+        }
+
         & span {
           font-size: 1.5rem;
           line-height: 2.5rem;
@@ -143,12 +155,27 @@
         background-color: var(--color-lighter-grey);
       }
 
+      &--basic {
+        @media (min-width: 1440px) {
+          margin-top: 0;
+          grid-area: 2 / 1 / 3 / 2;
+        }
+      }
+
+      &--business {
+        @media (min-width: 1440px) {
+          margin-top: 0;
+          grid-area: 2 / 3 / 3 / 4;
+        }
+      }
+
       &--pro {
         color: var(--color-pure-white);
         background-color: var(--color-pure-black);
 
-        @media (min-width: 1024px) {
-          height: 47rem;
+        @media (min-width: 1440px) {
+          margin-top: 0;
+          grid-area: 1 / 2 / 4 / 3;
         }
 
         &::before {
