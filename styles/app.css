@@ -1004,6 +1004,14 @@ picture img {
 .pricing-main {
   background-color: var(--color-pure-white);
   padding: 6.4rem 2.8rem; }
+  @media (min-width: 768px) {
+    .pricing-main {
+      padding: 11.2rem 4rem; } }
+  @media (min-width: 1440px) {
+    .pricing-main {
+      margin: 0 auto;
+      max-width: 1440px;
+      padding: 12rem 16.5rem; } }
 
 .pricing-main__prices .pricing-main__toggle {
   display: flex;
@@ -1061,11 +1069,28 @@ picture img {
     font-weight: bold;
     text-align: center;
     opacity: 0.5; }
+@media (min-width: 1024px) {
+  .pricing-main__prices .pricing-main__cards {
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+    column-gap: 3rem; } }
 .pricing-main__prices .pricing-main__cards .pricing-main__card {
   padding: 5.6rem 2.2rem;
   text-align: center;
   margin-top: 2.4rem;
   position: relative; }
+  @media (min-width: 768px) {
+    .pricing-main__prices .pricing-main__cards .pricing-main__card {
+      display: grid;
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+      padding: 4.2rem 4.8rem;
+      text-align: left;
+      align-items: center; } }
+  @media (min-width: 1024px) {
+    .pricing-main__prices .pricing-main__cards .pricing-main__card {
+      display: block;
+      text-align: center;
+      padding: 8.8rem 4rem; } }
   .pricing-main__prices .pricing-main__cards .pricing-main__card .pricing-main__title {
     font-size: 2.4rem;
     line-height: 2.5rem;
@@ -1079,6 +1104,16 @@ picture img {
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     margin-top: 4rem; }
+    @media (min-width: 768px) {
+      .pricing-main__prices .pricing-main__cards .pricing-main__card .pricing-main__price {
+        margin-top: initial;
+        text-align: right;
+        align-self: baseline; } }
+    @media (min-width: 1024px) {
+      .pricing-main__prices .pricing-main__cards .pricing-main__card .pricing-main__price {
+        text-align: inherit;
+        align-self: initial;
+        margin-top: inherit; } }
     .pricing-main__prices .pricing-main__cards .pricing-main__card .pricing-main__price span {
       font-size: 1.5rem;
       line-height: 2.5rem;
@@ -1095,14 +1130,20 @@ picture img {
   .pricing-main__prices .pricing-main__cards .pricing-main__card--pro {
     color: var(--color-pure-white);
     background-color: var(--color-pure-black); }
+    @media (min-width: 1024px) {
+      .pricing-main__prices .pricing-main__cards .pricing-main__card--pro {
+        height: 47rem; } }
     .pricing-main__prices .pricing-main__cards .pricing-main__card--pro::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 0;
       height: 0.6rem;
-      background: linear-gradient(26.57deg, var(--color-accent-gradient-1) 0%, var(--color-accent-gradient-2) 43.29%, var(--color-accent-gradient-3) 83.33%); }
+      background: linear-gradient(26.57deg, var(--color-accent-gradient-1) 0%, var(--color-accent-gradient-2) 43.29%, var(--color-accent-gradient-3) 83.33%);
+      transition: width 0.3s ease-in; }
+  .pricing-main__prices .pricing-main__cards .pricing-main__card:hover::before {
+    width: 100%; }
 .pricing-main__prices .pricing-main__cards .pricing-main__btn {
   font-size: 1.2rem;
   line-height: 1.6rem;
