@@ -54,7 +54,8 @@ h1, h2, h3 {
 
 .header p,
 .stories-header p,
-.features-header p {
+.features-header p,
+.pricing-header p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--color-pure-white);
@@ -63,7 +64,8 @@ h1, h2, h3 {
   @media screen and (min-width: 768px) {
     .header p,
     .stories-header p,
-    .features-header p {
+    .features-header p,
+    .pricing-header p {
       margin-top: 2.1rem; } }
 
 h2 {
@@ -952,5 +954,111 @@ picture img {
       margin-top: initial; } }
 
 /* Pricing */
+@media screen and (min-width: 768px) {
+  .pricing-header {
+    display: grid;
+    grid-template-columns: 35% 30% 1fr;
+    grid-template-rows: auto; } }
+@media screen and (min-width: 1440px) {
+  .pricing-header {
+    grid-template-columns: 42% 15% 1fr;
+    margin: 0 auto;
+    max-width: 1440px; } }
+.pricing-header__features-graphic {
+  order: 2;
+  display: block;
+  height: auto;
+  width: 100%; }
+  @media screen and (min-width: 1440px) {
+    .pricing-header__features-graphic {
+      grid-column: 2 / -1; } }
+.pricing-header__features-stories {
+  order: 1;
+  background-color: var(--color-pure-black);
+  padding: 7.2rem 3.3rem;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .pricing-header__features-stories {
+      padding: 17.3rem 5.4rem;
+      grid-column: 1 / span 2; } }
+  @media screen and (min-width: 1440px) {
+    .pricing-header__features-stories {
+      padding: 17.3rem 11.2rem;
+      grid-column: 1 / 2; } }
+  .pricing-header__features-stories::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3.3rem;
+    width: 12.8rem;
+    height: 0.6rem;
+    background: linear-gradient(26.57deg, var(--color-accent-gradient-1) 0%, var(--color-accent-gradient-2) 43.29%, var(--color-accent-gradient-3) 83.33%); }
+    @media screen and (min-width: 768px) {
+      .pricing-header__features-stories::before {
+        top: 16.8rem;
+        left: 0;
+        width: 0.6rem;
+        height: 14.4rem; } }
+
+.pricing-main {
+  background-color: var(--color-pure-white);
+  padding: 6.4rem 2.8rem; }
+
+.pricing-main__cards .pricing-main__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25.5rem;
+  margin: 0 auto; }
+  .pricing-main__cards .pricing-main__toggle .pricing-main__monthly {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--color-pure-black);
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.5; }
+  .pricing-main__cards .pricing-main__toggle .pricing-main__switch {
+    position: relative;
+    display: inline-block;
+    width: 6.4rem;
+    height: 3.2rem; }
+    .pricing-main__cards .pricing-main__toggle .pricing-main__switch input {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+      .pricing-main__cards .pricing-main__toggle .pricing-main__switch input:checked + .pricing-main__slider {
+        background-color: var(--color-pure-black); }
+      .pricing-main__cards .pricing-main__toggle .pricing-main__switch input:focus + .pricing-main__slider {
+        box-shadow: 0 0 0.1rem var(--color-pure-black); }
+      .pricing-main__cards .pricing-main__toggle .pricing-main__switch input:checked + .pricing-main__slider:before {
+        background-color: var(--color-pure-white);
+        transform: translateX(3rem); }
+    .pricing-main__cards .pricing-main__toggle .pricing-main__switch .pricing-main__slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--color-light-grey);
+      border-radius: 3.4rem;
+      transition: 0.4s; }
+      .pricing-main__cards .pricing-main__toggle .pricing-main__switch .pricing-main__slider::before {
+        position: absolute;
+        content: "";
+        height: 2.4rem;
+        width: 2.4rem;
+        left: 0.4rem;
+        bottom: 0.4rem;
+        background-color: var(--color-pure-black);
+        border-radius: 50%;
+        transition: 0.4s; }
+  .pricing-main__cards .pricing-main__toggle .pricing-main__yearly {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--color-pure-black);
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.5; }
 
 /*# sourceMappingURL=app.css.map */
