@@ -8,6 +8,11 @@ const beautifulStories = document.querySelector(
   ".header__beautiful-stories-graphic"
 );
 const designedGraphic = document.querySelector(".header__designed-graphic");
+const pricingSlider = document.querySelector(".pricing-main__slider");
+const pricingTimetable = document.querySelectorAll(".pricing-main__price span");
+const pricing = document.querySelectorAll(".pricing-main__price");
+
+let yearly = false;
 
 const toggleMenuWithOverlay = () => {
   overlay.classList.toggle("overlay--active");
@@ -25,3 +30,28 @@ menuCloseBtn.onclick = function (evt) {
   evt.currentTarget.classList.toggle("navbar__menu-btn--close");
   menuOpenBtn.style.display = "block";
 };
+
+pricingSlider.addEventListener("click", (evt) => {
+  if (!yearly) {
+    pricing.forEach(
+      (price) =>
+        (price.firstChild.textContent = `$${
+          parseInt(price.firstChild.textContent.replace("$", "0"), 10) + 100
+        }.00`)
+    );
+    pricingTimetable.forEach(
+      (timeTable) => (timeTable.textContent = "per year")
+    );
+  } else {
+    pricing.forEach(
+      (price) =>
+        (price.firstChild.textContent = `$${
+          parseInt(price.firstChild.textContent.replace("$", "0"), 10) - 100
+        }.00`)
+    );
+    pricingTimetable.forEach(
+      (timeTable) => (timeTable.textContent = "per month")
+    );
+  }
+  yearly = !yearly;
+});
